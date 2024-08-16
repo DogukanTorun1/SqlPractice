@@ -37,3 +37,15 @@ FROM reviews
 -- Calculate the average budget rounded to the thousands
 SELECT ROUND((AVG(budget)) , -3) as avg_budget_thousands
 FROM films
+
+-- Calculate the title and duration_hours from films
+SELECT title, (duration / 60.0) as duration_hours
+FROM films;
+
+-- Calculate the percentage of people who are no longer alive
+SELECT Count(deathdate) * 100.0 / Count(name)  AS percentage_dead
+FROM people;
+
+-- Calculate the percentage of people who are no longer alive
+SELECT Count(deathdate) * 100.0 / Count(name)  AS percentage_dead
+FROM people;
