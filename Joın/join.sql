@@ -10,7 +10,7 @@ FROM countries AS c
 INNER JOIN economies as e
 ON c.code = e.code
 
--- Select country and language names (aliased), From countries, Join to languages, Use code as the joining field with the USING keyword
+-- Select country and language names, From countries, Join to languages, Use code as the joining field with the USING keyword
 SELECT c.name AS country, l.name AS language
 FROM countries c
 INNER JOIN languages l
